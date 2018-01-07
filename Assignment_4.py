@@ -81,7 +81,7 @@ data = []
 labels = []
 #assuming that patch size is always odd
 patch_size = 3
-k=patch_size/2
+k=patch_size//2
 for i in range(k,gray.shape[0]-k):
     for j in range(k,gray.shape[1]-k):
         data.append([gray[m][n] for m in range(i-1,i+2) for n in range(j-1,j+2)])
